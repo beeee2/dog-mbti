@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  header h2 {
+    font-size: 14px;
+  }
+  header span {
+    width: 200px;
+  }
+}
