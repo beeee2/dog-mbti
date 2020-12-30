@@ -47,7 +47,17 @@ h1 {
   background-color: #34495e;
   color: #ecf0f1;
 }
-
+@media screen and (min-width: 900px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  nav ul li {
+    line-height: 50px;
+    transition: color 0.3s;
+    margin: 0 20px;
+  }
+}
 @media screen and (max-width: 480px) {
   .index-main {
     width: 100%;
