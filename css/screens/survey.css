@@ -1,3 +1,6 @@
+input[type="button"] {
+  -webkit-appearance: none;
+}
 header {
   height: 50px;
   width: 50%;
