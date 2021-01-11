@@ -53,8 +53,10 @@ button {
   background-color: #34495e;
   color: #ecf0f1;
 }
-.check:active {
+.check:visited {
   background-color: #f6e58d;
+  border: 0;
+  outline: 0;
 }
 @media screen and (max-width: 600px) {
   header {
