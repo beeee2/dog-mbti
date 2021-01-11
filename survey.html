@@ -5,6 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBTI로 보는 나의 강아지 유형</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script language="javascript">
+        function change() {
+            var elem = document.getElementById('btn1');
+            var elem2 = document.getElementById('btn2');
+            var string = document.getElementsByTagName("p1")[0].innerHTML;
+            if (elem.value == '에너지가 충전이 된다.') 
+            {elem.value = '나에게는 어렵다';
+             elem2.value = '나에게는 쉽다';
+            var replacedString = string.replace("나는 혼자만의", "사람들 앞에서").replace("시간을 가질 때", "말하는것은");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '에너지가 충전이 되지 않는다.') 
+            {elem.value = '나에게는 어렵다';
+             elem2.value = '나에게는 쉽다';
+            }
+            
+            else if (elem.value == '나에게는 어렵다') 
+            {elem.value = '진이 빠지는 일이다';
+             elem2.value = '기운이 차오르는 일이다';
+            var replacedString = string.replace("사람들 앞에서", "친구들을 자주").replace("말하는것은", "만나는 것은");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '나에게는 쉽다') 
+            {elem.value = '진이 빠지는 일이다';
+             elem2.value = '기운이 차오르는 일이다';
+            }
+            
+            else if (elem.value == '진이 빠지는 일이다') 
+            {elem.value = '현실적이다';
+             elem2.value = '이상적이다';
+            var replacedString = string.replace("친구들을 자주", "나는").replace("만나는 것은", "  ");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '기운이 차오르는 일이다') 
+            {elem.value = '현실적이다';
+             elem2.value = '이상적이다';
+            }
+            
+            else if (elem.value == '현실적이다') 
+            {elem.value = '경험이 더 중요하다';
+             elem2.value = '이론이 더 중요하다';
+            var replacedString = string.replace("나는", "무언가를 할때").replace("  ", "자신감을 얻기 위해");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '이상적이다') 
+            {elem.value = '경험이 더 중요하다';
+             elem2.value = '이론이 더 중요하다';
+            }
+            
+            else if (elem.value == '경험이 더 중요하다') 
+            {elem.value = '현실주의적이다';
+             elem2.value = '미래지향적이다';
+            var replacedString = string.replace("무언가를 할때", "세상을 바라보는").replace("자신감을 얻기 위해", "관점이");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '이론이 더 중요하다') 
+            {elem.value = '현실주의적이다';
+             elem2.value = '미래지향적이다';
+            }
+            
+            else if (elem.value == '현실주의적이다') 
+            {elem.value = '강한 편이다';
+             elem2.value = '약한 편이다';
+             var replacedString = string.replace("세상을 바라보는", "자기 주장이").replace("관점이", "  ");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '미래지향적이다') 
+            {elem.value = '강한 편이다';
+             elem2.value = '약한 편이다';
+            }
+            
+            else if (elem.value == '강한 편이다') 
+            {elem.value = '집중을 잘하는 편이다';
+             elem2.value = '집중하지 못해 걱정에 빠진다';
+             var replacedString = string.replace("자기 주장이", "안좋은 일이 있을 때").replace("  ", "해야하는 일에");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '약한 편이다') 
+            {elem.value = '집중을 잘하는 편이다';
+             elem2.value = '집중하지 못해 걱정에 빠진다';
+            }
+            
+            else if (elem.value == '집중을 잘하는 편이다') 
+            {elem.value = '조화로움';
+             elem2.value = '경쟁';
+            var replacedString = string.replace("안좋은 일이 있을 때", "어떤것을 더").replace("해야하는 일에", "중요하게 생각하는가");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '집중하지 못해 걱정에 빠진다') 
+            {elem.value = '조화로움';
+             elem2.value = '경쟁';
+            }
+            
+            else if (elem.value == '조화로움') 
+            {elem.value = '계획을 세운다';
+             elem2.value = '일단 시작한다';
+            var replacedString = string.replace("어떤것을 더", "일을 하기전에").replace("중요하게 생각하는가", "  ");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '경쟁') 
+            {elem.value = '계획을 세운다';
+             elem2.value = '일단 시작한다';
+            }
+            
+            else if (elem.value == '계획을 세운다') 
+            {elem.value = '결과가 더 중요하다';
+             elem2.value = '원인이 더 중요하다';
+            var replacedString = string.replace("일을 하기전에", "원인과 결과 중").replace("  ", "  ");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '일단 시작한다') 
+            {elem.value = '결과가 더 중요하다';
+             elem2.value = '원인이 더 중요하다';
+            }
+            
+            else if (elem.value == '결과가 더 중요하다') 
+            {elem.value = '빨리 결정하는 것이 낫다';
+             elem2.value = '최대한 미뤄두는 것이 낫다';
+            var replacedString = string.replace("원인과 결과 중", "중요한 결정은").replace("  ", "  ");
+            document.getElementsByTagName("p1")[0].innerHTML = replacedString;
+            }
+            else if (elem.value == '원인이 더 중요하다') 
+            {elem.value = '빨리 결정하는 것이 낫다';
+             elem2.value = '최대한 미뤄두는 것이 낫다';
+            }
+            
+            else if (elem.value == '빨리 결정하는 것이 낫다') 
+            {
+                location.href = "result.html";
+            }
+            else if (elem.value == '최대한 미뤄두는 것이 낫다') 
+            {
+                location.href = "result.html";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -13,11 +149,11 @@
     </header>
     <main>
         <div class="question-container">
-            <p>나는 혼자만의<br/>시간을 가질 때</p>
+            <p1>나는 혼자만의<br>시간을 가질 때</p1>
         </div>
         <form action="result.html" class="check-container">
-            <button class="check">에너지가 충전된다.</button>
-            <button class="check">에너지가 충전되지 않는다.</button>
+            <input type="button" class="check" name="btn1" id="btn1" value="에너지가 충전이 된다." onclick="change()">
+            <input type="button" class="check" name="btn2" id="btn2" value="에너지가 충전이 되지 않는다." onclick="change()">
         </form>
     </main>
 </body>
