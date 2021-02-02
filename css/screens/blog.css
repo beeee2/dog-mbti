@@ -135,6 +135,8 @@ footer {
   font-weight: 700;
   transition: 0.3s;
   opacity: 0;
+  box-shadow: 1.5px 1.5px 10px rgba(255, 255, 255, 0.45),
+    -1.5px -1.5px 10px rgba(255, 255, 255, 0.45);
 }
 #back-to-top:hover {
   padding: 15px 45px;
