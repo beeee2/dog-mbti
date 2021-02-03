@@ -24,3 +24,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
+#followAni {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 5em;
+  color: #2d3436;
+}
+@media (max-width: 1023px) {
+  .blind-followAni {
+    display: none;
+  }
+}
