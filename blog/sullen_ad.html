@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="../css/screens/blog.css">
+    <script src="https://kit.fontawesome.com/3c26041fb8.js" crossorigin="anonymous"></script>
+<style>
+    main section img {
+        width: 700px;
+    }
+    .sullenLink {
+        border: 1px solid;
+        margin-top: 30px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 0.125em #2D3436;
+    }
+    .sullenLink:hover {
+        background-color: #2D3436;
+        color: white;
+    }
+    @media (min-width:1023px) {
+        
+        .sullenLink {
+            position: absolute;
+            bottom: 15px;
+            left: calc(50% - 19px);
+        }
+    }
+    @media (max-width:1022px) {
+        main section img {
+        width: 100%;
+    }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <label for="">
+            <input type="search" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </label>
+    </header>
+    <div class="banner"></div>
+    <main>
+        <aside>
+            <div class="profile">
+                <img class="profile__Img" src="../img/size.png" alt=""><br>
+                <span>puppy test<br>개발자들의 이야기</span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">SULLEN 홍보</a></li>
+                    <li><a href="#">경제와 관련해서</a></li>
+                    <li><a href="#">이런저런 이야기</a></li>
+                    <li><a href="blog/Interior.html">집 인테리어</a></li>
+                </ul>
+            </div>
+        </aside>
+        <section>
+            <h2>🐶 SULLEN 샵에 놀러오세요 🐶</h2>
+            <img src="../img/sullen--banner.png" alt="sullen 홈페이지 배너">
+            <p><br>
+                SULLEN은 시무룩하다는 의미로, 
+꿍해보이는 표정이 매력적인 캐릭터들을 그립니다. <br>
+2020년 처음 마플샵에 입점하여 
+가방, 굿즈, 의류를 판매하고 있습니다.
+            </p><br><br>
+            <img src="../img/sullen--info.PNG" alt="">
+            <p><br><br>
+            챠무는 SULLEN의 대표 캐릭터로
+복실복실한 갈색 털에 파묻힌 시무룩한 눈이 포인트입니다.<br><br>
+🔍 챠무가 시무룩한 이유는 ?<br>
+챠무는 집사가 잠시 방을 비운 사이에 
+책상 위에 있던 커피를 쏟았어요 
+그것도 집사가 열심히 쓰고 있던 다이어리에 말이에요 
+집사가 속상해할 걸 생각한 챠무는 시무룩해졌답니다 😧
+            <br><br>
+        SULLEN 네 강아지들이 어쩌다 꿍한 표정을 짓게 되었는지 궁금하다면 
+        아래 링크를 클릭해주세요 💜<br><br><br><br><br>
+        </p>
+        <a class="sullenLink" href="https://marpple.shop/kr/sullen">SULLEN네로 이동하기</a>
+        </section>
+    </main>
+    <footer>
+        <span>개발자 연락처<br>
+            류대희 이현비 박영규 | abc@naver.com
+        </span>
+    </footer>
+</body>
+</html>
